@@ -1,0 +1,54 @@
+.skill{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 8%;
+    @include tab{
+        padding-top: 15%;
+    }
+    @include sp{
+        width: 98%;
+        padding-top: 20%;
+    }
+    .item{
+        display: flex;
+        flex-wrap: wrap;
+        .content{
+            width: 45%;
+            padding: 2%;
+            @include tab{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 5%;
+            }
+            .title{
+                display: flex;
+                padding-bottom: 15px;
+                i{
+                    margin: auto 0;
+                    font-size: 200%;
+                }
+                h3{
+                    font-weight: bold;
+                    font-size: 150%;
+                    line-height: normal;
+                    padding-left: 20px;
+                }
+            }
+            h6{
+                font-weight: bold;
+                line-height: normal;
+                font-size: 120%;
+                padding-bottom: 5px;
+                @include sp{
+                    font-size: 100%;
+                }
+            }
+            p{
+                line-height: normal;
+                @include sp{
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+}

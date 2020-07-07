@@ -1,0 +1,92 @@
+
+.main{
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: larger;
+        margin-top: 10%;
+    }
+    .top_image{
+        // margin-top: 3%;
+        width: 100%;
+        height: 500px;
+        background: url(../img/top_item.jpg) no-repeat;
+        background-size: cover;
+        text-align: center;
+        @include sp{
+            height: 300px;
+        }
+        p{
+            font-family: cursive;
+            z-index: 10;
+            color: #fff;
+            font-size: 64px;
+            padding-top: 15%;
+            @include sp{
+                font-size: 36px;
+                padding-top: 30%;
+                line-height: normal;
+            }
+        }
+    }
+    .contents{
+        width: 40%;
+        margin: 0 auto;
+        @include tab{
+            width: 70%;
+        }
+        @include sp {
+            width: 90%;
+        }
+        .profile_image{
+            width: 50%;
+            margin: 2% auto;
+            img{
+                width: 100%;
+            }
+        }
+        .my-name{
+            text-align: center;
+        }
+        p{
+            margin-bottom: 5%;
+            line-height: normal;
+        }
+    }
+    .lessons{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .lesson{
+            width: 20%;
+            margin-bottom: 10%;
+            @include tab{
+                width: 35%;
+            }
+            @include sp{
+                width: 90%;
+                margin: 5% auto;
+            }
+            .lesson-icon{
+                position: relative;
+                text-align: center;
+                img{
+                    width: 100%;
+                    @include tab{
+                        width: 60%;
+                    }
+                }
+                p{
+                    position: absolute;
+                    top: 45%;
+                    width: 100%;
+                    font-size: 120%;
+                    color: white;
+                    text-align: center;
+                    font-weight: bold;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

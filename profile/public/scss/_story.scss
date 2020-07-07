@@ -1,0 +1,58 @@
+.story{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 8%;
+    @include tab{
+        width: 98%;
+        padding-top: 15%;
+    }
+    @include sp{
+        padding-top: 20%;
+    }
+    section{
+        margin: 5% auto;
+        display: flex;
+        justify-content: space-between;
+        @include tab{
+            flex-direction: column-reverse;
+        }
+        .content{
+            width: 45%;
+            @include tab{
+                width: 95%;
+                margin: 2% auto;
+            }
+            h3{
+                margin-bottom: 3%;
+                padding-bottom: 2%;
+                font-weight: bold;
+                font-size: 120%;
+                border-bottom: solid 1px #222;
+            }
+            p{
+                line-height: normal;
+                @include sp{
+                    font-size: 80%;
+                }
+                span{
+                    margin-left: 1em;
+                }
+            }
+            ul{
+                li{
+                    line-height: normal;
+                }
+            }
+        }
+        .image{
+            width: 45%;
+            @include tab{
+                width: 90%;
+                margin: 5% auto;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

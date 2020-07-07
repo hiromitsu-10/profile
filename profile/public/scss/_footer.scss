@@ -1,0 +1,36 @@
+footer{
+    height: 100px;
+    background: linear-gradient(#443567 0%, #554380 100%);
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    .social-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li{
+                margin:0 1em;
+                a{
+                    text-decoration: none;
+                    i{
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 150%;
+                        -webkit-tap-highlight-color:rgba(0,0,0,0);
+                        cursor: pointer;
+                    }
+                }
+            }
+            li:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}

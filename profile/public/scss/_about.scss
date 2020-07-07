@@ -1,0 +1,66 @@
+.about{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10%;
+    @include sp{
+        padding-top: 20%;
+    }
+    .item{
+        display: flex;
+        justify-content: space-around;
+        margin: 3% 0;
+        @include tab{
+            margin-bottom: 100px;
+        }
+        @include sp{
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+        .item_image{
+            width: 40%;
+            @include tab{
+                width: 50%;
+            }
+            @include sp{
+                width: 95%;
+                margin: 0 auto;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .item_content{
+            width: 40%;
+            @include sp{
+                width: 95%;
+                margin: 10px 0;
+            }
+            h3{
+                padding-bottom: 2%;
+                font-weight: bolder;
+                font-size: larger;
+                border-bottom: 1px solid #222;
+            }
+            p{
+                line-height: normal;
+                padding-top: 3%;
+                @include sp{
+                    font-size: 80%;
+                }
+            }
+            h4{
+                text-align: center;
+                padding:10% 0 3% 0;
+            }
+            .anime{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                ol{
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+}
